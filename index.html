@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Quick Dictionary</h2>
+            <div class="text1">
+                <label class="email">Email</label>
+            </div class="box">
+            <div>
+                <input class="co" type="email" id="email" placeholder="Email" required/>
+            </div>
+            <div class="text2">
+                <label class="password">Password</label>
+            </div>
+            <div class="box">
+                <input class="co" type="password" id="password" placeholder="New Password" required />
+            </div>
+            <div class="buttons">
+                <button class="bb" onclick="login()">Login</button>
+                <button class="bb" onclick="signUp()">Sign Up</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <scripr src="firebase.js"></script>
+    <script src="SignUp.js"></script>
+    <script src="LogIn.js"></script>
+</html>
